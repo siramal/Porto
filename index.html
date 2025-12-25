@@ -1,153 +1,258 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sirojul Kamal | Programmer</title>
+    <link rel="icon" type="image/x-icon" href="asset/pp.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>my portofolio</title>
-  <link rel="icon" type="image/x-icon" href="asset/pp.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- svg togle dark/light mode from boostrap -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="circle-half" viewBox="0 0 16 16" fill="currentColor">
+        <path
+          d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+        ></path>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16" fill="currentColor">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        ></path>
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        ></path>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16" fill="currentColor">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        ></path>
+      </symbol>
+    </svg>
+    <!-- end -->
+    <!-- 255c61 -->
+    <!-- header start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fw-semibold bg-secndary fixed-top"
+      style="background-color: transparent; backdrop-filter: blur(200px)"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portofolio</a>
+        <a class="navbar-brand" id="time" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"id="bd-theme-text"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
 
-<body>
-  <!-- svg togle dark/light mode from boostrap -->
-  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-    <symbol id="circle-half" viewBox="0 0 16 16" fill="currentColor">
-      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-    </symbol>
-    <symbol id="moon-stars-fill" viewBox="0 0 16 16" fill="currentColor">
-      <path
-        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z">
-      </path>
-      <path
-        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z">
-      </path>
-    </symbol>
-    <symbol id="sun-fill" viewBox="0 0 16 16" fill="currentColor">
-      <path
-        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
-      </path>
-    </symbol>
-  </svg>
-  <!-- end -->
-  <!-- 255c61 -->
-  <!-- header start -->
-  <nav class="navbar navbar-expand-lg navbar-light fw-semibold bg-secndary fixed-top"
-    style="background-color:transparent;backdrop-filter: blur(200px);">
-    <div class="container">
-      <a class="navbar-brand" href="#">My Portofolio</a>
-      <a class="navbar-brand" id="time" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#project">Product</a>
-          <a class="nav-link" href="#contact">Contact</a>
-          <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
-              aria-label="Toggle theme (dark)">
-              <svg class="bi my-1 theme-icon-active">
-                <use href="#moon-stars-fill"></use>
-              </svg>
-              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-                  aria-pressed="false">
-                  <svg class="bi me-2 opacity-50">
-                    <use href="#sun-fill"></use>
-                  </svg>
-                  Light
-                  <svg class="bi ms-auto d-none">
-                    <use href="#check2"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark"
-                  aria-pressed="true">
-                  <svg class="bi me-2 opacity-50">
-                    <use href="#moon-stars-fill"></use>
-                  </svg>
-                  Dark
-                  <svg class="bi ms-auto d-none">
-                    <use href="#check2"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
-                  aria-pressed="false">
-                  <svg class="bi me-2 opacity-50">
-                    <use href="#circle-half"></use>
-                  </svg>
-                  Auto
-                  <svg class="bi ms-auto d-none">
-                    <use href="#check2"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg class="bi my-1 theme-icon-active">
+                  <use href="#moon-stars-fill"></use>
+                </svg>
+                <span class="d-lg-none ms-2">Toggle theme</span>
+              </button>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button class="dropdown-item" data-bs-theme-value="light">
+                    Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item active"
+                    data-bs-theme-value="dark"
+                  >
+                    Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-bs-theme-value="auto">
+                    Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
           </ul>
-          </li>
         </div>
       </div>
+    </nav>
+    <!-- header end -->
+    <!-- profil content start -->
+    <div
+      class="container-fluid p-5"
+      style="background-image: linear-gradient(#255c61 10%, #0000)"
+    >
+      <section id="picture" class="text-center">
+        <img
+          src="asset/fotome.png"
+          alt="programmers"
+          class="img-thumbnail rounded-circle rounded mx-auto d-block mt-5"
+          style="width: 225px"
+        />
+        <h1>Sirojul Kamal</h1>
+        <h5 id="about">I am <span id="type"></span></h5>
+      </section>
     </div>
-  </nav>
-  <!-- header end -->
-  <!-- profil content start -->
-  <div class="container-fluid p-5" style="background-image:linear-gradient(#255c61 10%,#0000)">
-    <section id="picture" class="text-center">
-      <img src="asset/fotome.png" alt="programmers" class="img-thumbnail rounded-circle rounded mx-auto d-block mt-5"
-        style="width:225px">
-      <h1>Sirojul Kamal</h1>
-      <h5 id="about">I am <span id="type"></span></h5>
-    </section>
-  </div>
-  <!-- profil content end -->
+    <!-- profil content end -->
 
-  <!-- content about start -->
-  <div class="container">
-    <section class="text-center 
-    ">
-      <h1 class="mt-5">About Me</h1>
-      <p>I am a student at Wikrama Vocational School, Bogor, majoring in Software Engineering who has a passion for
-        learning and developing skills in the field of technology. I have experience in web application development and
-        enjoy working in a team or independently to complete tasks well.
-      </p>
-    </section>
-  </div>
-  <!-- content about end -->
-
-  <!-- content tech stack start -->
-  <div class="techstack mt-5">
-    <h1 class="text-center mt-5 mb-4">Tech Stack</h1>
-    <div class="text-center">
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
-      <img class="techs" src="https://svgl-badge.vercel.app/api/Software/Visual%20Studio%20Code?theme=dark" />
+    <!-- content about start -->
+    <div class="container">
+      <section class="text-center">
+        <h1 class="mt-5">About Me</h1>
+        <p>
+          I am a student at Wikrama Vocational School, Bogor, majoring in
+          Software Engineering who has a passion for learning and developing
+          skills in the field of technology. I have experience in web
+          application development and enjoy working in a team or independently
+          to complete tasks well.
+        </p>
+      </section>
     </div>
-    <br>
+
+    <!-- content about end -->
+    <!-- content experience start -->
+    <section id="experience" class="container my-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Experience</h2>
+        <p class="text-muted">My professional experience</p>
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <!-- Frontend Experience -->
+        <div class="col-md-10">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="fw-bold mb-1">Frontend Developer</h5>
+              <h6 class="text-muted">PT Mede Media Softika</h6>
+              <p class="text-muted mb-3">February 2025 - March 2025</p>
+              <div class="">
+                Has experience in front-end development at PT Mede Media
+                Softika, contributing to the creation and development of the
+                user interface (UI) for the Bank Indonesia application. Has
+                experience in front-end development at PT Mede Media Softika,
+                contributing to the creation and development of the user
+                interface (UI) for the Bank Indonesia application.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Experience -->
+        <div class="col-md-10">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="fw-bold mb-1">Backend Developer</h5>
+              <h6 class="text-muted">PT Mede Media Softika</h6>
+              <p class="text-muted mb-3">April 2025 - May 2025</p>
+              <div class="">
+                Has experience in software development at PT Mede Media Softika,
+                with contributing to the creation of CRUD (Create, Read, Update,
+                Delete) features on the Kementerian Koordinator Pemberdayaan
+                Masyarakat application.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- content experience end -->
+
+    <!-- content tech stack start -->
+    <div class="techstack mt-5">
+      <h1 class="text-center mt-5 mb-4">Tech Stack</h1>
+      <div class="text-center">
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark"
+        />
+        <img
+          class="techs"
+          src="https://svgl-badge.vercel.app/api/Software/Visual%20Studio%20Code?theme=dark"
+        />
+        <img
+  class="techs"
+  src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark"
+/>
+<img
+  class="techs"
+  src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark"
+/>
+
+      </div>
+      <br />
+    </div>
 
     <!-- <div class="text-center cardtech">
       <img class="most"
@@ -171,66 +276,115 @@
         <div class="container justify-content-center align-items-center">
           <div class="text-center">
             <div class="row">
-
               <!-- Card 1 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <img src="asset/apotek.png" class="card-img-top" alt="simple article website">
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <img
+                    src="asset/apotek.png"
+                    class="card-img-top"
+                    alt="simple article website"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Apotek App</h5>
-                    <p class="card-text">The Pharmacy Application is a web application for managing medicines,
-                      transactions and customer data with search features, printing receipts and sales reports
+                    <p class="card-text">
+                      The Pharmacy Application is a web application for managing
+                      medicines, transactions and customer data with search
+                      features, printing receipts and sales reports
                     </p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#imgModal" data-index="0">View
-                      Project</a>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imgModal"
+                      data-index="0"
+                      >View Project</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Card 2 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <img src="asset/kenangansenja.png" class="card-img-top" alt="beautifull earth">
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <img
+                    src="asset/kenangansenja.png"
+                    class="card-img-top"
+                    alt="beautifull earth"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Kedai Kopi Kenangan Senja</h5>
-                    <p class="card-text">Kedai Kopi Kenangan Senja is a web-based coffee ordering application that makes
-                      it easy for customers to order coffee and snacks quickly and practically.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#imgModal" data-index="1">View
-                      Project</a>
+                    <p class="card-text">
+                      Kedai Kopi Kenangan Senja is a web-based coffee ordering
+                      application that makes it easy for customers to order
+                      coffee and snacks quickly and practically.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imgModal"
+                      data-index="1"
+                      >View Project</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Card 3 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <img src="asset/pilpres.png" class="card-img-top" alt="gallery">
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <img
+                    src="asset/pilpres.png"
+                    class="card-img-top"
+                    alt="gallery"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Pilpres 2024</h5>
-                    <p class="card-text">The 2024 Presidential Election application is a web-based application that
-                      provides the latest information about the 2024 presidential election, including candidate data,
-                      schedules and real-time voting results.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#imgModal" data-index="2">View
-                      Project</a>
+                    <p class="card-text">
+                      The 2024 Presidential Election application is a web-based
+                      application that provides the latest information about the
+                      2024 presidential election, including candidate data,
+                      schedules and real-time voting results.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imgModal"
+                      data-index="2"
+                      >View Project</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Card 4 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <img src="asset/kaltulator.png" class="card-img-top" alt="gallery">
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <img
+                    src="asset/kaltulator.png"
+                    class="card-img-top"
+                    alt="gallery"
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Kalkulator Bunga</h5>
-                    <p class="card-text">The Interest Calculator app calculates simple and compound interest based on
-                      principal, interest and time.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#imgModal" data-index="3">View
-                      Project</a>
+                    <p class="card-text">
+                      The Interest Calculator app calculates simple and compound
+                      interest based on principal, interest and time.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#imgModal"
+                      data-index="3"
+                      >View Project</a
+                    >
                   </div>
                 </div>
               </div>
-
-            </div> <!-- row -->
+            </div>
+            <!-- row -->
           </div>
         </div>
       </div>
@@ -240,22 +394,37 @@
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-dark text-white">
           <div class="modal-body text-center position-relative">
-            <img src="" id="modalImage" class="img-fluid rounded mb-3">
+            <img src="" id="modalImage" class="img-fluid rounded mb-3" />
             <h5 id="modalCaption"></h5>
             <!-- Tombol Prev -->
-            <button type="button" class="btn btn-light position-absolute top-50 start-0 translate-middle-y"
-              id="prevBtn">
+            <button
+              type="button"
+              class="btn btn-light position-absolute top-50 start-0 translate-middle-y"
+              id="prevBtn"
+            >
               ‹
             </button>
             <!-- Tombol Next -->
-            <button type="button" class="btn btn-light position-absolute top-50 end-0 translate-middle-y" id="nextBtn">
+            <button
+              type="button"
+              class="btn btn-light position-absolute top-50 end-0 translate-middle-y"
+              id="nextBtn"
+            >
               ›
             </button>
           </div>
           <div class="modal-footer border-0">
             <!-- Tombol Fullscreen -->
-            <a id="fullscreenBtn" href="" target="_blank" class="btn btn-success">Full Screen</a>
-            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <a
+              id="fullscreenBtn"
+              href=""
+              target="_blank"
+              class="btn btn-success"
+              >Full Screen</a
+            >
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -266,14 +435,14 @@
         "asset/apotek.png",
         "asset/kenangansenja.png",
         "asset/pilpres.png",
-        "asset/kaltulator.png"
+        "asset/kaltulator.png",
       ];
 
       const titles = [
         "Apotek App",
         "Kedai Kopi Kenangan Senja",
         "Pilpres 2024",
-        "Kalkulator Bunga"
+        "Kalkulator Bunga",
       ];
 
       let currentIndex = 0;
@@ -306,7 +475,8 @@
 
       // kontrol keyboard
       document.addEventListener("keydown", function (event) {
-        if (imgModal.classList.contains("show")) { // cek modal terbuka
+        if (imgModal.classList.contains("show")) {
+          // cek modal terbuka
           if (event.key === "ArrowLeft") {
             showImage(currentIndex - 1);
           } else if (event.key === "ArrowRight") {
@@ -322,98 +492,200 @@
           <div class="col-md-12">
             <div>
               <h1 class="text-center mt-5">My Certificate</h1>
-              <p class="text-center">This Certificate is the result of learning</p>
+              <p class="text-center">
+                This Certificate is the result of learning
+              </p>
             </div>
           </div>
         </div>
         <div class="container justify-content-center align-items-center">
           <div class="text-center">
             <div class="row">
-
               <!-- Certificate 1 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <iframe src="asset/dicoding1.pdf" frameborder="0" style="width:100%; height:200px;"></iframe>
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/dicoding1.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
                   <div class="card-body">
                     <h5 class="card-title">Belajar Dasar Pemrograman Web</h5>
-                    <p class="card-text">Certificate proves ability to create basic web pages with HTML, CSS, and
-                      JavaScript.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-index="0">View
-                      Certificate</a>
+                    <p class="card-text">
+                      Certificate proves ability to create basic web pages with
+                      HTML, CSS, and JavaScript.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="0"
+                      >View Certificate</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Certificate 2 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <iframe src="asset/dicoding2.pdf" frameborder="0" style="width:100%; height:200px;"></iframe>
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/dicoding2.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
                   <div class="card-body">
-                    <h5 class="card-title">Belajar Membuat Front-End Web Untuk Pemula</h5>
-                    <p class="card-text">Proves basic skills in creating responsive web interfaces with HTML, CSS, and
-                      JS.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-index="1">View
-                      Certificate</a>
+                    <h5 class="card-title">
+                      Belajar Membuat Front-End Web Untuk Pemula
+                    </h5>
+                    <p class="card-text">
+                      Proves basic skills in creating responsive web interfaces
+                      with HTML, CSS, and JS.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="1"
+                      >View Certificate</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Certificate 3 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <iframe src="asset/Sertifikat E-Learning K3 Sirojul Kamal.pdf" frameborder="0"
-                    style="width:100%; height:200px;"></iframe>
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/Sertifikat E-Learning K3 Sirojul Kamal.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
                   <div class="card-body">
                     <h5 class="card-title">E-Learning K3</h5>
-                    <p class="card-text">Certificate shows understanding of occupational safety and health principles.
+                    <p class="card-text">
+                      Certificate shows understanding of occupational safety and
+                      health principles.
                     </p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-index="2">View
-                      Certificate</a>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="2"
+                      >View Certificate</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Certificate 4 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <iframe src="asset/dicoding3.pdf" frameborder="0" style="width:100%; height:200px;"></iframe>
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/dicoding3.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
                   <div class="card-body">
                     <h5 class="card-title">Belajar Pemrograman Dengan C</h5>
-                    <p class="card-text">Shows basic programming skills using the C language.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-index="3">View
-                      Certificate</a>
+                    <p class="card-text">
+                      Shows basic programming skills using the C language.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="3"
+                      >View Certificate</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Certificate 5 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <iframe src="asset/dicoding4.pdf" frameborder="0" style="width:100%; height:200px;"></iframe>
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/dicoding4.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
                   <div class="card-body">
                     <h5 class="card-title">Belajar Pemrograman dengan Java</h5>
-                    <p class="card-text">Proves basic skills in Java programming and OOP concepts.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-index="4">View
-                      Certificate</a>
+                    <p class="card-text">
+                      Proves basic skills in Java programming and OOP concepts.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="4"
+                      >View Certificate</a
+                    >
                   </div>
                 </div>
               </div>
 
               <!-- Certificate 6 -->
               <div class="col-md-3 mt-3 col-sm-12">
-                <div class="card rounded-2" style="width: 18rem;height:25rem">
-                  <iframe src="asset/dicoding4.pdf" frameborder="0" style="width:100%; height:200px;"></iframe>
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/dicoding4.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
                   <div class="card-body">
-                    <h5 class="card-title">Belajar Prinsip Pemrograman SOLID</h5>
-                    <p class="card-text">Signifies understanding in applying principles of structured software
-                      development.</p>
-                    <a href="#" class="demoBtn" data-bs-toggle="modal" data-bs-target="#pdfModal" data-index="5">View
-                      Certificate</a>
+                    <h5 class="card-title">
+                      Belajar Prinsip Pemrograman SOLID
+                    </h5>
+                    <p class="card-text">
+                      Signifies understanding in applying principles of
+                      structured software development.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="5"
+                      >View Certificate</a
+                    >
                   </div>
                 </div>
               </div>
-
-            </div> <!-- row -->
+              <!-- Certificate 7 -->
+              <div class="col-md-3 mt-3 col-sm-12">
+                <div class="card rounded-2" style="width: 18rem; height: 25rem">
+                  <iframe
+                    src="asset/Pkl-SERTIFIKAT-2025-A-05-Sirojul.pdf"
+                    frameborder="0"
+                    style="width: 100%; height: 200px"
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Internship Certificate PT Mede Media Softika
+                    </h5>
+                    <p class="card-text">
+                      Has completed an internship at PT Mede Media Softika, contributing to web UI and CRUD development.
+                    </p>
+                    <a
+                      href="#"
+                      class="demoBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#pdfModal"
+                      data-index="6"
+                      >View Certificate</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- row -->
           </div>
         </div>
       </div>
@@ -423,32 +695,62 @@
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content bg-dark text-white">
           <div class="modal-body text-center position-relative">
-            <iframe src="" id="modalPDF" style="width:100%; height:80vh;" frameborder="0"></iframe>
+            <iframe
+              src=""
+              id="modalPDF"
+              style="width: 100%; height: 80vh"
+              frameborder="0"
+            ></iframe>
             <h5 id="pdfCaption" class="mt-3"></h5>
 
             <!-- Prev button -->
-            <button type="button" class="btn btn-light position-absolute top-50 start-0 translate-middle-y"
-              id="prevCert">
+            <button
+              type="button"
+              class="btn btn-light position-absolute top-50 start-0 translate-middle-y"
+              id="prevCert"
+            >
               ‹
             </button>
             <!-- Next button -->
-            <button type="button" class="btn btn-light position-absolute top-50 end-0 translate-middle-y" id="nextCert">
+            <button
+              type="button"
+              class="btn btn-light position-absolute top-50 end-0 translate-middle-y"
+              id="nextCert"
+            >
               ›
             </button>
           </div>
           <div class="modal-footer border-0">
             <!-- Dropdown Action -->
             <div class="btn-group">
-              <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <button
+                type="button"
+                class="btn btn-success dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Actions
               </button>
               <ul class="dropdown-menu">
-                <li><a id="downloadBtn" href="" download class="dropdown-item">Download</a></li>
-                <li><a id="fullscreenCertBtn" href="" target="_blank" class="dropdown-item">Full Screen</a></li>
+                <li>
+                  <a id="downloadBtn" href="" download class="dropdown-item"
+                    >Download</a
+                  >
+                </li>
+                <li>
+                  <a
+                    id="fullscreenCertBtn"
+                    href=""
+                    target="_blank"
+                    class="dropdown-item"
+                    >Full Screen</a
+                  >
+                </li>
               </ul>
             </div>
-            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -461,7 +763,8 @@
         "asset/Sertifikat E-Learning K3 Sirojul Kamal.pdf",
         "asset/dicoding3.pdf",
         "asset/dicoding4.pdf",
-        "asset/dicoding4.pdf" // untuk SOLID
+        "asset/dicoding4.pdf",
+        "asset/Pkl-SERTIFIKAT-2025-A-05-Sirojul.pdf",
       ];
 
       const pdfTitles = [
@@ -470,7 +773,8 @@
         "E-Learning K3",
         "Belajar Pemrograman Dengan C",
         "Belajar Pemrograman dengan Java",
-        "Belajar Prinsip Pemrograman SOLID"
+        "Belajar Prinsip Pemrograman SOLID",
+        "Internship Certificate PT Mede Media Softika",
       ];
 
       let currentCert = 0;
@@ -489,7 +793,6 @@
         downloadBtn.href = pdfs[currentCert];
         fullscreenCertBtn.href = pdfs[currentCert];
       }
-
 
       pdfModal.addEventListener("show.bs.modal", function (event) {
         let button = event.relatedTarget;
@@ -512,106 +815,150 @@
     </script>
 
     <!-- content certificate end -->
-<!-- contact start -->
-<div class="contact" style="background-image:linear-gradient(#0000 ,#255c61);margin-top:100px;">
-  <h1 class="text-center mt-5" id="contact">Contact Me</h1>
-  <p class="text-center">kritik dan saran dipersilahkan, terima kasih </p>
-  <div class="container-fluid w-50">
+    <!-- contact start -->
+    <div
+      class="contact py-5"
+      style="background: linear-gradient(transparent, #255c61)"
+    >
+      <h1 class="text-center mt-5" id="contact">Contact Me</h1>
+      <p class="text-center">
+        We greatly appreciate your criticism and suggestions. Thank you.
+      </p>
+      <div class="container-fluid w-50">
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nameInput"
+            placeholder=""
+          />
+        </div>
 
-    <!-- Name -->
-    <div class="mb-3">
-      <label for="nameInput" class="form-label">Name</label>
-      <input type="text" class="form-control" id="nameInput" placeholder="">
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder=""
+          />
+        </div>
+
+        <!-- Message -->
+        <div class="mb-3">
+          <label for="messageInput" class="form-label">Message</label>
+          <textarea class="form-control" id="messageInput" rows="3"></textarea>
+        </div>
+
+        <!-- Button -->
+        <button class="btnWa" type="button" id="sendBtn">
+          Send via WhatsApp
+        </button>
+      </div>
     </div>
+    <!-- contact end -->
+    <script>
+      document.getElementById("sendBtn").addEventListener("click", function () {
+        const name = document.getElementById("nameInput").value.trim();
+        const email = document.getElementById("emailInput").value.trim();
+        const message = document.getElementById("messageInput").value.trim();
 
-    <!-- Email -->
-    <div class="mb-3">
-      <label for="emailInput" class="form-label">Email</label>
-      <input type="email" class="form-control" id="emailInput" placeholder="">
-    </div>
+        if (!name || !email || !message) {
+          alert("Mohon isi semua field sebelum mengirim pesan.");
+          return;
+        }
 
-    <!-- Message -->
-    <div class="mb-3">
-      <label for="messageInput" class="form-label">Message</label>
-      <textarea class="form-control" id="messageInput" rows="3"></textarea>
-    </div>
-
-    <!-- Button -->
-    <button class="btn btn-success w-100 mb-5" type="button" id="sendBtn">
-      Send via WhatsApp
-    </button>
-  </div>
-</div>
-<!-- contact end -->
-<script>
-  document.getElementById("sendBtn").addEventListener("click", function () {
-    const name = document.getElementById("nameInput").value.trim();
-    const email = document.getElementById("emailInput").value.trim();
-    const message = document.getElementById("messageInput").value.trim();
-
-    if (!name || !email || !message) {
-      alert("Mohon isi semua field sebelum mengirim pesan.");
-      return;
-    }
-
-    const text = `Halo, saya ${name} (${email}).%0A%0A${message}`;
-    const url = `https://wa.me/6289610098833?text=${encodeURIComponent(text)}`;
-    window.open(url, "_blank");
-  });
-</script>
+        const text = `Halo, saya ${name} (${email}).%0A%0A${message}`;
+        const url = `https://wa.me/6289610098833?text=${encodeURIComponent(
+          text
+        )}`;
+        window.open(url, "_blank");
+      });
+    </script>
 
     <!-- footer start -->
-    <footer class="container-fluid d-flex justify-content-center align-items-center"
-      style="position:relative; bottom:0;left:0;background-color:#255c61;height:100px;font-weight:700;margin-top:300px;">
+    <footer
+      class="container-fluid d-flex justify-content-center align-items-center"
+      style="
+        position: relative;
+        bottom: 0;
+        left: 0;
+        background-color: #255c61;
+        height: 100px;
+        font-weight: 700;
+      "
+    >
       <ul class="d-flex text-center sosmed">
+        <!-- LinkedIn -->
         <li class="ico">
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-            class="link-light link-offset-2 link-underline link-underline-opacity-0" target="_blank"><svg
-              stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round">
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
-                href="https://mail.google.com/mail/u/0/#inbox?compose=new">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                </path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-          </a>
-        </li>
-        <li class="ico">
-          <a href="https://www.linkedin.com/in/eko-yusron-b8b65328b/"
-            class="link-light link-offset-2 link-underline link-underline-opacity-0" target="_blank"><svg
-              stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-              stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg" href="">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-              </path>
+          <a
+            href="https://www.linkedin.com/in/sirojulkamal/"
+            class="link-light link-offset-2 link-underline link-underline-opacity-0"
+            target="_blank"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
               <rect x="2" y="9" width="4" height="12"></rect>
               <circle cx="4" cy="4" r="2"></circle>
-            </svg></a>
+            </svg>
+          </a>
         </li>
+
+        <!-- GitHub -->
         <li class="ico">
-          <a href="https://github.com/Ekoysrn" class="link-light link-offset-2 link-underline link-underline-opacity-0"
-            target="_blank"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
-              stroke-linecap="round">
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
-                href="https://github.com/Ekoysrn">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-              </svg>
+          <a
+            href="https://github.com/siramal"
+            class="link-light link-offset-2 link-underline link-underline-opacity-0"
+            target="_blank"
+          >
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61
+          c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77
+          A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48
+          a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1
+          A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78
+          c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
           </a>
         </li>
       </ul>
-      <p class="text-center position-absolute bottom-0">&copy;2024 Sirojul Kamal copyright all
-        rights reserved
+      <p class="text-center position-absolute bottom-0">
+        &copy;2024 Sirojul Kamal copyright all rights reserved
       </p>
     </footer>
     <!-- footer end -->
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
 </html>

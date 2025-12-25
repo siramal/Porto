@@ -1,3 +1,4 @@
+
 * {
   font-family: "Manrope", sans-serif;
 }
@@ -14,6 +15,9 @@ svg {
   width: 16px;
   height: 16px;
   background-color: transparent;
+}
+.techs {
+  margin-top: 12px;
 }
 
 /* card styling */
@@ -63,7 +67,29 @@ svg {
   bottom:0;
   right:50px;
 }
-
+.btnWa{
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(    to right,    #25d366 0%,    #128c7e 51%,    #25d366 100%  );
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  */border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btnWa:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
 .demoBtn:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
